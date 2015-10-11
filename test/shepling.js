@@ -10,7 +10,7 @@ var data = {
   '#! /bin/sh'               : 'sh',
   '#!/usr/awk -f'            : 'awk',
   '#!/bin/sed -f'            : 'sed',
-  '#!/bin/sed -f\n\nsudo foo': 'sed',
+  './test/foo.sh'            : 'sed',
   'Foo bar baz'              : null
 };
 
