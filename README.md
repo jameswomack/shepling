@@ -1,16 +1,18 @@
-# Shebang
+# Shepling
 
 ### Description
 
-Node module for extracting the normalized shebang command token.
+Node.js module for extracting the normalized shebang command token.
 
 ### Examples
 
 ```js
-var shebang = require('shebang');
+var shepling = require('shepling');
 
-console.log(shebang("#!/usr/bin/ruby")) // "ruby"
-console.log(shebang("#!/usr/bin/env node")) // "node"
+console.log(shepling("#!/usr/bin/ruby").name)     // "ruby"
+console.log(shepling("#!/usr/bin/env node").name) // "node"
+console.log(shepling("#!/usr/bin/ruby").has)      // true
+console.log(shepling("foo bar baz").has)          // false
 ```
 
 ### Tests

@@ -1,26 +1,39 @@
 {
-  "author": "Alexandru Vladutu <alexandru.vladutu@gmail.com>",
-  "license": "MIT",
-  "name": "shebang",
+  "name": "shepling",
   "description": "Extract normalized shebang command token",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha",
   "repository": {
     "type": "git",
-    "url": "git://github.com/alessioalex/shebang.git"
+    "url": "git://github.com/jameswomack/shepling.git"
   },
-  "main": "shebang.js",
+  "author": "James Womack (@james_womack)",
+  "contributors": [
+    "Alexandru Vladutu <alexandru.vladutu@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "shepling.js",
   "engines": {
     "node": ">= 0.4.0"
   },
   "keywords": [
+    "shepling",
     "shebang",
+    "hashbang",
+    "sha-bang",
+    "cli",
+    "bash",
+    "zsh",
+    "shell",
+    "bourne",
     "lang",
     "language",
     "command"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "tap": "2.1.1"
+  },
   "scripts": {
-    "test": "node test/shebang.js"
+    "test": "node test/shepling.js"
   }
 }
